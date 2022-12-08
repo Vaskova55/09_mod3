@@ -9,27 +9,27 @@
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <StackPanel Orientation="Horizontal">
-                <TextBox IsReadOnly="True" Text="{Binding LastName}" Margin="1" FontSize="20"/>
-                <TextBox IsReadOnly="True" Text="{Binding FirstName}" Margin="1" FontSize="20"/>
-                <TextBox IsReadOnly="True" Text="{Binding Patronymic}" Margin="1" FontSize="20"/>
+                <TextBox IsReadOnly="True" Text="{Binding LastName}" TextWrapping="WrapWithOverflow" Margin="1" FontSize="20"/>
+                <TextBox IsReadOnly="True" Text="{Binding FirstName}" TextWrapping="WrapWithOverflow" Margin="1" FontSize="20"/>
+                <TextBox IsReadOnly="True" Text="{Binding Patronymic}" TextWrapping="WrapWithOverflow" Margin="1" FontSize="20"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="День рождения:" FontSize="20" Margin="0,0,5,0"/>
                 <TextBlock Text="{Binding BirthDate, StringFormat= dd.MM.yyyy hh:mm}" FontSize="20"/>
             </StackPanel>
             <StackPanel Orientation="Vertical">
-                <TextBlock Text="{Binding INN, StringFormat='ИНН: {0}'}" FontSize="20"/>
-                <TextBlock Text="{Binding SNILS, StringFormat='СНИЛС: {0}'}" FontSize="20"/>
+                <TextBlock Text="{Binding INN, StringFormat='ИНН: {0}'}" TextWrapping="WrapWithOverflow" FontSize="20"/>
+                <TextBlock Text="{Binding SNILS, StringFormat='СНИЛС: {0}'}" TextWrapping="WrapWithOverflow" FontSize="20"/>
             </StackPanel>
             <Border BorderThickness="2" BorderBrush="Black" CornerRadius="4" Margin="1">
                 <StackPanel Orientation="Horizontal" DataContext="{Binding PassportInfo}">
                     
                         <TextBlock Text="Паспортные данные:" FontSize="20" Margin="0,0,5,0"/>
                     <StackPanel>
-                        <TextBox IsReadOnly="True" Text="{Binding SeriesNumber, StringFormat='Серия, номер: {0}'}" FontSize="20"/>
-                        <TextBox IsReadOnly="True" Text="{Binding IssuingDepartment, StringFormat='Выдано: {0}'}"  FontSize="20"/>
-                        <TextBox IsReadOnly="True" Text="{Binding Date, StringFormat= dd.MM.yyyy}" FontSize="20"/>
-                        <TextBox IsReadOnly="True" Text="{Binding DepartmentCode, StringFormat='Код подразделения: {0}'}" FontSize="20"/>
+                        <TextBox IsReadOnly="True" Text="{Binding SeriesNumber, StringFormat='Серия, номер: {0}'}" TextWrapping="WrapWithOverflow" FontSize="20"/>
+                        <TextBox IsReadOnly="True" Text="{Binding IssuingDepartment, StringFormat='Выдано: {0}'}" TextWrapping="WrapWithOverflow" FontSize="20"/>
+                        <TextBox IsReadOnly="True" Text="{Binding Date, StringFormat= dd.MM.yyyy}" TextWrapping="WrapWithOverflow" FontSize="20"/>
+                        <TextBox IsReadOnly="True" Text="{Binding DepartmentCode, StringFormat='Код подразделения: {0}'}" TextWrapping="WrapWithOverflow" FontSize="20"/>
                         
                     </StackPanel>
                     
@@ -39,10 +39,10 @@
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Адрес регистрации:" FontSize="20" Margin="0,0,5,0"/>
                     <StackPanel Orientation="Vertical">
-                        <TextBox IsReadOnly="True" Text="{Binding PassportInfo.RegistrationAddress.Country, StringFormat='Страна: {0}'}" FontSize="20"/>
-                        <TextBox IsReadOnly="True" Text="{Binding PassportInfo.RegistrationAddress.Region, StringFormat='Регион: {0}'}" FontSize="20"/>
-                        <TextBox IsReadOnly="True" Text="{Binding PassportInfo.RegistrationAddress.City, StringFormat='Город: {0}'}" FontSize="20"/>
-                        <TextBox IsReadOnly="True" Text="{Binding PassportInfo.RegistrationAddress.AddressPart, StringFormat='Адресс: {0}'}" FontSize="20"/>
+                        <TextBox IsReadOnly="True" Text="{Binding PassportInfo.RegistrationAddress.Country, StringFormat='Страна: {0}'}" TextWrapping="WrapWithOverflow" FontSize="20"/>
+                        <TextBox IsReadOnly="True" Text="{Binding PassportInfo.RegistrationAddress.Region, StringFormat='Регион: {0}'}" TextWrapping="WrapWithOverflow" FontSize="20"/>
+                        <TextBox IsReadOnly="True" Text="{Binding PassportInfo.RegistrationAddress.City, StringFormat='Город: {0}'}" TextWrapping="WrapWithOverflow" FontSize="20"/>
+                        <TextBox IsReadOnly="True" Text="{Binding PassportInfo.RegistrationAddress.AddressPart, StringFormat='Адресс: {0}'}" TextWrapping="WrapWithOverflow" FontSize="20"/>
                     </StackPanel>
                 </StackPanel>
             </Border>
@@ -52,12 +52,12 @@
                     <TextBlock Text="Группа:" FontSize="20" Margin="0,0,5,0"/>
                     <StackPanel Orientation="Vertical">
                         <StackPanel Orientation="Horizontal">
-                        <TextBox IsReadOnly="True" Text="{Binding SpecialityCode, StringFormat='Специальность: {0}'}" FontSize="20"/>
-                        <TextBox IsReadOnly="True" Text="{Binding SpecialityName}" FontSize="20"/>
+                            <TextBox IsReadOnly="True" Text="{Binding SpecialityCode, StringFormat='Специальность: {0}'}" TextWrapping="WrapWithOverflow" FontSize="20"/>
+                            <TextBox IsReadOnly="True" Text="{Binding SpecialityName}" TextWrapping="WrapWithOverflow" FontSize="20"/>
                     </StackPanel>
                     <StackPanel>
-                        <TextBox IsReadOnly="True" Text="{Binding CourseNumber, StringFormat='Курс: {0}'}" FontSize="20"/>
-                    <TextBox IsReadOnly="True" Text="{Binding GroupCode, StringFormat='Группа: {0}'}" FontSize="20"/>
+                            <TextBox IsReadOnly="True" Text="{Binding CourseNumber, StringFormat='Курс: {0}'}" TextWrapping="WrapWithOverflow" FontSize="20"/>
+                            <TextBox IsReadOnly="True" Text="{Binding GroupCode, StringFormat='Группа: {0}'}" TextWrapping="WrapWithOverflow" FontSize="20"/>
                 </StackPanel>
                 </StackPanel>
                 </StackPanel>
@@ -66,9 +66,9 @@
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Образование:" FontSize="20" Margin="0,0,5,0"/>
                 <StackPanel Orientation="Vertical" DataContext="{Binding EducationalOrganisation}">
-                    <TextBox IsReadOnly="True" Text="{Binding LegalName, StringFormat='Место обучения: {0}'}" FontSize="20"/>
-                    <TextBox IsReadOnly="True" Text="{Binding LegalAddress, StringFormat='Официальный адрес: {0}'}" FontSize="20"/>
-                    <TextBox IsReadOnly="True" Text="{Binding ActualAddress, StringFormat='Адрес: {0}'}" FontSize="20"/>
+                        <TextBox IsReadOnly="True" Text="{Binding LegalName, StringFormat='Место обучения: {0}'}" TextWrapping="WrapWithOverflow" FontSize="20"/>
+                        <TextBox IsReadOnly="True" Text="{Binding LegalAddress, StringFormat='Официальный адрес: {0}'}" TextWrapping="WrapWithOverflow" FontSize="20"/>
+                        <TextBox IsReadOnly="True" Text="{Binding ActualAddress, StringFormat='Адрес: {0}'}" TextWrapping="WrapWithOverflow" FontSize="20"/>
                 </StackPanel>
                 </StackPanel>
             </Border>
