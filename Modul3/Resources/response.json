@@ -1,0 +1,29 @@
+{
+	"LastName": "Котеночкин",
+	"FirstName": "Артем",
+	"Patronymic": "Валерьевич",
+	"BirthDate": "2005-07-14T00:00:00",
+	"PassportInfo": {
+		"SeriesNumber": "4619 334586",
+		"IssuingDepartment": "МП №2 ОВМ УМВД России по Орехово-Зуевскому городскому округу",
+		"Date": "2019-08-02T00:00:00",
+		"DepartmentCode": "500-500",
+		"RegistrationAddress": {
+			"Country": "Российская Федерация",
+			"Region": "Московская область",
+			"City": "г.Орехово-Зуево",
+			"AddressPart": "ул. Ленина, д. 55, кв. 35"
+		}
+	},
+	"INN": "125480055535",
+	"SNILS": "123-486-132 01",
+	"SpecialityCode": "09.02.07",
+	"SpecialityName": "Информационные системы и программирование",
+	"CourseNumber": 2,
+	"GroupCode": "ИСП.21",
+	"EducationalOrganisation": {
+		"LegalName": "ГОУ ВО МО ПЭК ГГТУ",
+		"LegalAddress": "142611, Московская область, г. Орехово-Зуево, ул. Зеленая, д. 22",
+		"ActualAddress": "142600, Московская область, г. Орехово-Зуево, ул. Ленина, д. 55"
+	}
+}
